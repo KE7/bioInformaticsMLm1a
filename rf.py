@@ -23,7 +23,8 @@ def GetGC(seq):
 def GetGCSeq(seq):
     nGC = [0,0,0,0]
     for seg in xrange(4):
-        nGC[seg] += seq[seg*10:(seg+1)*10].count("g") + seq[seg*10:(seg+1)*10].count("c")
+        nGC[seg] += seq[seg*10:(seg+1)*10].count("g") +\
+            seq[seg*10:(seg+1)*10].count("c")
     return [1.0 * n / len(seq) for n in nGC]
 
 if __name__ == "__main__":
@@ -33,26 +34,27 @@ if __name__ == "__main__":
     gc_pos = GetGC(seq_pos)
     gc_neg = GetGC(seq_neg)
 
-    model = RandomForestClassifier(criterion="entropy", \
-     n_estimators = 300, max_depth = 100, class_weight={0:100, 1:1})
+    model = RandomForestClassifier(criterion="entropy", n_estimators = 300,\
+        max_depth = 100, class_weight={0:100, 1:1})
 
     data = np.array(list(gc_pos) + list(gc_neg), dtype = np.float)
     print "G/C content feature matrix sample:"
     print data[0]
     print ""
-    label = np.array([1 for x in xrange(len(gc_pos))] + [0 for x in xrange(len(gc_neg))])
+    pos_len = len(gc_pos)
+    neg_len = len(gc_neg)
+    label = np.array([1 for x in xrange(pos_len)] +\
+        [0 for x in xrange(neg_len)])
     
     model = model.fit(data, label)
     result = model.predict(data)
 
-    err = 0
-    for i in result:
-        if i < len(data) and result[i] == 0:
-            err += 1
-        if i >= len(data) and result[i] == 1:
-            err += 1
+    err = 0.0
+    for i in range(0, len(result)):
+        if result[i] != label[i]:
+            err += 1.0
 
-    err_rate = 1.0 * err / (len(data) * 2)
+    err_rate = 1.0 * err / len(data)
     print "Error Rate:"
     print err_rate
     print ""
