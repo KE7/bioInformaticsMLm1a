@@ -32,13 +32,14 @@ def fetchData():
 		seq_site = website + chrms +":"+str(loci_left) + "," + str(loci_right)
 		response = urllib2.urlopen(seq_site)
 		html = response.read().split("\n")[5]
-		file.write("> %s:%s, %s \n" %(chrms,loci_left,loci_right))
-		file.write(html)
-		file.write("\n")
+		if html != "":
+			if html[0] in ["a","g","c","t"]:
+				file.write(">%s:%s:%s\n" %(chrms,loci_left,loci_right))
+				file.write(html)
+				file.write("\n")
 		print("%s / %s" %(i+1,len(pos)))
 	file.close()
 
 if __name__ == "__main__":
 	pos = modified_chr_sites()
 	fetchData()
-
