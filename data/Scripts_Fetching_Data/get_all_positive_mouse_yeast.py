@@ -32,7 +32,8 @@ def fetchData(windowSize, fileName, website):
             file.write("\n")
         except:
             print("Error at %d" % i)
-            print(html)
+            print(seqSite)
+            print(response.read())
             raw_input("Press Enter to continue...")
 
         print("%s / %s" %(i+1, len(pos)))
