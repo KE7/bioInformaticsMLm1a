@@ -1,4 +1,3 @@
-
 import sys
 def normalize(line):
 	values = line.split()
