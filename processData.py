@@ -75,9 +75,3 @@ def split_neg():
     fp.close()
     wp1.close()
     wp2.close()
-
-if __name__ == "__main__":
-    ReadFASTA_pos('data/positive_776.txt')
-    ReadFASTA_neg('data/negative_776.txt')
-    split_pos()
-    split_neg()

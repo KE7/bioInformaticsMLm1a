@@ -1,4 +1,6 @@
 from sklearn.ensemble import RandomForestClassifier
+from processData import *
+from normalizeCoverage import *
 import sys
 import numpy as np
 import random
@@ -109,5 +111,25 @@ def GetModel():
 
 # Training and testing phase
 if __name__ == "__main__":
+    fn = "data/coverage_positive_776.txt"
+    ofn = "data/coverage_pos_776_norm.txt"
+    inF = open(fn,'r')
+    ouF = open(ofn,'w')
+    for line in inF:
+        ouF.write(normalize(line))
+    inF.close()
+    ouF.close()
+    fn = "data/coverage_negative_trough_776.txt"
+    ofn= "data/coverage_neg_776_norm.txt"
+    inF = open(fn,'r')
+    ouF = open(ofn,'w')
+    for line in inF:
+        ouF.write(normalize(line))
+    inF.close()
+    ouF.close()
+    ReadFASTA_pos('data/positive_776.txt')
+    ReadFASTA_neg('data/negative_776.txt')
+    split_pos()
+    split_neg()
     model = GetModel()
     
