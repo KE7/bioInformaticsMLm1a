@@ -1,6 +1,7 @@
 from sklearn.ensemble import RandomForestClassifier
+from processData import *
+from normalizeCoverage import *
 import sys
-import pickle
 import numpy as np
 import random
 
@@ -16,14 +17,13 @@ def ReadFASTA(filename):
     fp.close()
     return Sequences
 
+# Read the RT file
 def ReadCov(filename):
     fp = open(filename, 'r')
     Sequences = []
     for line in fp:
         strs = line.split()
         tmp = []
-        if len(strs) != 20:
-            print line
         for s in strs:
             tmp.append(float(s))
         Sequences.append(tmp)
@@ -44,8 +44,7 @@ def GetGCSeq(seq):
             seq[seg*10:(seg+1)*10].count("c")
     return [float(1.0 * n / len(seq)) for n in nGC]
 
-# Training and testing phase
-if __name__ == "__main__":
+def GetModel():
     seq_pos_train = ReadFASTA('data/positive_776_train.fasta')
     seq_neg_train = ReadFASTA('data/negative_776_train.fasta')
     seq_pos_test = ReadFASTA('data/positive_776_test.fasta')
@@ -77,8 +76,10 @@ if __name__ == "__main__":
     model = RandomForestClassifier(criterion="entropy", n_estimators = 300,\
         max_depth = 100, class_weight={0:100, 1:1})
 
-    data_train = np.array(list(gc_pos_train) + list(gc_neg_train), dtype = np.float)
-    data_test = np.array(list(gc_pos_test) + list(gc_neg_test), dtype = np.float)
+    data_train = np.array(list(gc_pos_train) + list(gc_neg_train),\
+        dtype = np.float)
+    data_test = np.array(list(gc_pos_test) + list(gc_neg_test),\
+        dtype = np.float)
     print "G/C content feature matrix sample:"
     print data_train[0]
     print ""
@@ -105,3 +106,30 @@ if __name__ == "__main__":
     print ""
     print "Predict Label:"
     print result
+
+    return model
+
+# Training and testing phase
+if __name__ == "__main__":
+    fn = "data/coverage_positive_776.txt"
+    ofn = "data/coverage_pos_776_norm.txt"
+    inF = open(fn,'r')
+    ouF = open(ofn,'w')
+    for line in inF:
+        ouF.write(normalize(line))
+    inF.close()
+    ouF.close()
+    fn = "data/coverage_negative_trough_776.txt"
+    ofn= "data/coverage_neg_776_norm.txt"
+    inF = open(fn,'r')
+    ouF = open(ofn,'w')
+    for line in inF:
+        ouF.write(normalize(line))
+    inF.close()
+    ouF.close()
+    ReadFASTA_pos('data/positive_776.txt')
+    ReadFASTA_neg('data/negative_776.txt')
+    split_pos()
+    split_neg()
+    model = GetModel()
+    
