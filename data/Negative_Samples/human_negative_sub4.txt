@@ -1,0 +1,594 @@
+> chr1:761859, 761899
+caaggaagccaucaaaguccaacaggaucacgucaaaaaga
+................((((....))))............. ( -3.20)
+....,...........((((....))))............. [ -3.69]
+................((((....))))............. { -3.20 d=1.33}
+ frequency of mfe structure in ensemble 0.453586; ensemble diversity 2.33  
+> chr1:761860, 761900
+aaggaagccaucaaaguccaacaggaucacgucaaaaagac
+...............((((....))))...(((.....))) ( -3.90)
+...,...........((((....))))...(((.....))) [ -4.49]
+...............((((....))))...(((.....))) { -3.90 d=1.94}
+ frequency of mfe structure in ensemble 0.380916; ensemble diversity 3.12  
+> chr1:761861, 761901
+aggaagccaucaaaguccaacaggaucacgucaaaaagaca
+..............((((....))))...(((.....))). ( -5.10)
+..............((((....))))...(((.....))). [ -5.53]
+..............((((....))))...(((.....))). { -5.10 d=1.26}
+ frequency of mfe structure in ensemble 0.500102; ensemble diversity 2.18  
+> chr1:761862, 761902
+ggaagccaucaaaguccaacaggaucacgucaaaaagacau
+.............((((....))))...(((.....))).. ( -5.10)
+,,...........((((....))))...(((.....))).. [ -5.59]
+.............((((....))))...(((.....))).. { -5.10 d=1.42}
+ frequency of mfe structure in ensemble 0.448073; ensemble diversity 2.35  
+> chr1:761863, 761903
+gaagccaucaaaguccaacaggaucacgucaaaaagacaug
+............((((....))))...(((.....)))... ( -5.10)
+............((((....))))...(((.....)))... [ -5.56]
+............((((....))))...(((.....)))... { -5.10 d=1.23}
+ frequency of mfe structure in ensemble 0.474823; ensemble diversity 2.03  
+> chr1:761864, 761904
+aagccaucaaaguccaacaggaucacgucaaaaagacauga
+...........((((....))))((.(((.....))).)). ( -6.00)
+...........((((....))))((.(((.....))).)). [ -6.38]
+...........((((....))))((.(((.....))).)). { -6.00 d=1.12}
+ frequency of mfe structure in ensemble 0.539686; ensemble diversity 1.84  
+> chr1:761865, 761905
+agccaucaaaguccaacaggaucacgucaaaaagacaugaa
+..........((((....))))((.(((.....))).)).. ( -6.00)
+..........{(((....)))|((.(((.....))).)),. [ -6.52]
+..........((((....))))((.(((.....))).)).. { -6.00 d=1.43}
+ frequency of mfe structure in ensemble 0.428953; ensemble diversity 2.12  
+> chr1:761866, 761906
+gccaucaaaguccaacaggaucacgucaaaaagacaugaaa
+.........((((....))))((.(((.....))).))... ( -6.00)
+.........{(((....)))|((.(((.....))).)),.. [ -6.52]
+.........((((....))))((.(((.....))).))... { -6.00 d=1.43}
+ frequency of mfe structure in ensemble 0.428987; ensemble diversity 2.11  
+> chr1:761867, 761907
+ccaucaaaguccaacaggaucacgucaaaaagacaugaaag
+........((((....))))((.(((.....))).)).... ( -6.00)
+........{(((....)))|((.(((.....))).)),... [ -6.52]
+........((((....))))((.(((.....))).)).... { -6.00 d=1.41}
+ frequency of mfe structure in ensemble 0.431361; ensemble diversity 2.09  
+> chr1:761868, 761908
+caucaaaguccaacaggaucacgucaaaaagacaugaaagu
+.......((((....))))((.(((.....))).))..... ( -6.00)
+.......{(((....)))|((.(((.....))).)),.... [ -6.52]
+.......((((....))))((.(((.....))).))..... { -6.00 d=1.40}
+ frequency of mfe structure in ensemble 0.433442; ensemble diversity 2.08  
+> chr1:761869, 761909
+aucaaaguccaacaggaucacgucaaaaagacaugaaaguc
+......((((....))))((.(((.....))).))...... ( -6.00)
+......{(((....)))|((.(((.....))).)),..... [ -6.53]
+......((((....))))((.(((.....))).))...... { -6.00 d=1.57}
+ frequency of mfe structure in ensemble 0.424075; ensemble diversity 2.40  
+> chr1:761870, 761910
+ucaaaguccaacaggaucacgucaaaaagacaugaaaguca
+.....((((....))))((.(((.....))).))....... ( -6.00)
+.....{(((....)))}((.(((.....))).))....... [ -6.64]
+.....((((....))))((.(((.....))).))....... { -6.00 d=2.64}
+ frequency of mfe structure in ensemble 0.352637; ensemble diversity 4.07  
+> chr1:761871, 761911
+caaaguccaacaggaucacgucaaaaagacaugaaagucaa
+....((((....))))((.(((.....))).))........ ( -6.00)
+....{(((....)))}((.(((.....))).))........ [ -6.64]
+....((((....))))((.(((.....))).))........ { -6.00 d=2.63}
+ frequency of mfe structure in ensemble 0.353067; ensemble diversity 4.04  
+> chr1:761872, 761912
+aaaguccaacaggaucacgucaaaaagacaugaaagucaac
+...((((....))))((.(((.....))).))......... ( -6.00)
+...{(((....)))}((.(((.....))).))......... [ -6.64]
+...((((....))))((.(((.....))).))......... { -6.00 d=2.60}
+ frequency of mfe structure in ensemble 0.354574; ensemble diversity 4.01  
+> chr1:761873, 761913
+aaguccaacaggaucacgucaaaaagacaugaaagucaacu
+..((((....))))((.(((.....))).)).......... ( -6.00)
+..{(((....)))}((.(((.....))).)).......... [ -6.65]
+..((((....))))((.(((.....))).)).......... { -6.00 d=2.64}
+ frequency of mfe structure in ensemble 0.347616; ensemble diversity 4.08  
+> chr1:761874, 761914
+aguccaacaggaucacgucaaaaagacaugaaagucaacuu
+.((((....))))((.(((.....))).))........... ( -6.00)
+.{(((....)))}((.(((.....))).))........... [ -6.69]
+.((((....))))((.(((.....))).))........... { -6.00 d=2.73}
+ frequency of mfe structure in ensemble 0.3268; ensemble diversity 4.29  
+> chr1:761875, 761915
+guccaacaggaucacgucaaaaagacaugaaagucaacuug
+.(((....)))(((.(((.....))).)))........... ( -5.70)
+,(((....)))|((.(((.....))).)),........... [ -6.50]
+.(((....))).((.(((.....))).))............ { -4.50 d=3.22}
+ frequency of mfe structure in ensemble 0.272368; ensemble diversity 5.04  
+> chr1:761876, 761916
+uccaacaggaucacgucaaaaagacaugaaagucaacuuga
+(((....)))(((.(((.....))).)))............ ( -5.70)
+(((....)))(((.(((.....))).)))..,,,...,,.. [ -6.40]
+(((....)))(((.(((.....))).)))............ { -5.70 d=4.28}
+ frequency of mfe structure in ensemble 0.321078; ensemble diversity 7.07  
+> chr1:761877, 761917
+ccaacaggaucacgucaaaaagacaugaaagucaacuugaa
+.(((...(((((.(((.....))).)))...))...))).. ( -4.50)
+.{....,|,(((.(((.....))).))}..,}}...}}}.. [ -5.62]
+.........(((.(((.....))).)))............. { -4.00 d=5.87}
+ frequency of mfe structure in ensemble 0.163146; ensemble diversity 9.03  
+> chr1:761878, 761918
+caacaggaucacgucaaaaagacaugaaagucaacuugaag
+(((...(((((.(((.....))).)))...))...)))... ( -4.10)
+......{,(((.(((.....))).))}..,}}...})}... [ -5.23]
+........(((.(((.....))).))).............. { -4.00 d=5.54}
+ frequency of mfe structure in ensemble 0.159876; ensemble diversity 8.67  
+> chr1:761879, 761919
+aacaggaucacgucaaaaagacaugaaagucaacuugaaga
+.......(((.(((.....))).)))............... ( -4.00)
+.....,.{{(.{((.....}}}.))}..,}}...,}}.... [ -5.06]
+.......(((.(((.....))).)))............... { -4.00 d=6.11}
+ frequency of mfe structure in ensemble 0.179951; ensemble diversity 9.09  
+> chr1:761880, 761920
+acaggaucacgucaaaaagacaugaaagucaacuugaagag
+......(((.(((.....))).)))................ ( -4.00)
+......{({.{((,....}}}.})}..,}}...}}}..... [ -5.09]
+......(((.(((.....))).)))................ { -4.00 d=6.34}
+ frequency of mfe structure in ensemble 0.169369; ensemble diversity 9.31  
+> chr1:761881, 761921
+caggaucacgucaaaaagacaugaaagucaacuugaagaga
+.....(((.(((.....))).)))................. ( -4.00)
+.....(({.{((,,...|||.}},..}}}...}}},..... [ -5.26]
+.........(((.....)))..................... { -1.90 d=7.96}
+ frequency of mfe structure in ensemble 0.128591; ensemble diversity 10.16 
+> chr1:761882, 761922
+aggaucacgucaaaaagacaugaaagucaacuugaagagau
+...(((...((((...(((......)))...))))...))) ( -4.90)
+...{((.,.((((...(((......)))...)))).,.))} [ -5.75]
+...(((...((((...(((......)))...))))...))) { -4.90 d=4.55}
+ frequency of mfe structure in ensemble 0.25308; ensemble diversity 6.87  
+> chr1:761883, 761923
+ggaucacgucaaaaagacaugaaagucaacuugaagagaua
+..(((...((((...(((......)))...))))...))). ( -5.60)
+..(((.,.((((...(((......)))...)))).,.))). [ -6.23]
+..(((...((((...(((......)))...))))...))). { -5.60 d=2.68}
+ frequency of mfe structure in ensemble 0.361008; ensemble diversity 4.46  
+> chr1:761884, 761924
+gaucacgucaaaaagacaugaaagucaacuugaagagauaa
+.(((...((((...(((......)))...))))...))).. ( -5.60)
+.(((.,.((((...(((......)))...)))).,.))).. [ -6.22]
+.(((...((((...(((......)))...))))...))).. { -5.60 d=2.67}
+ frequency of mfe structure in ensemble 0.362903; ensemble diversity 4.44  
+> chr1:761885, 761925
+aucacgucaaaaagacaugaaagucaacuugaagagauaau
+(((...((((...(((......)))...))))...)))... ( -5.20)
+(((.,.((((...(((......)))...)))).,.)))... [ -5.91]
+(((...((((...(((......)))...))))...)))... { -5.20 d=3.21}
+ frequency of mfe structure in ensemble 0.316474; ensemble diversity 5.19  
+> chr1:761886, 761926
+ucacgucaaaaagacaugaaagucaacuugaagagauaauu
+(((.(((.....))).)))...................... ( -4.00)
+((,.,(({{...|||.,,,..}}}...}}}}...,,..... [ -5.21]
+.....((((...(((......)))...)))).......... { -3.70 d=6.97}
+ frequency of mfe structure in ensemble 0.140232; ensemble diversity 8.95  
+> chr1:761887, 761927
+cacgucaaaaagacaugaaagucaacuugaagagauaauua
+....((((...(((......)))...))))........... ( -3.70)
+....((((...(((......)))...))))........... [ -4.40]
+....((((...(((......)))...))))........... { -3.70 d=2.93}
+ frequency of mfe structure in ensemble 0.320952; ensemble diversity 4.81  
+> chr1:761888, 761928
+acgucaaaaagacaugaaagucaacuugaagagauaauuau
+...((((...(((......)))...))))............ ( -3.70)
+...((((...(((......)))...))))............ [ -4.26]
+...((((...(((......)))...))))............ { -3.70 d=2.06}
+ frequency of mfe structure in ensemble 0.405301; ensemble diversity 3.49  
+> chr1:761890, 761930
+gucaaaaagacaugaaagucaacuugaagagauaauuauua
+.((((...(((......)))...)))).............. ( -3.70)
+.((({...(((......)))...)))}.............. [ -4.11]
+.((((...(((......)))...)))).............. { -3.70 d=3.16}
+ frequency of mfe structure in ensemble 0.517448; ensemble diversity 5.11  
+> chr1:761891, 761931
+ucaaaaagacaugaaagucaacuugaagagauaauuauuaa
+((((...(((......)))...))))............... ( -3.70)
+((((...(((......)))...))))............... [ -3.99]
+((((...(((......)))...))))............... { -3.70 d=0.96}
+ frequency of mfe structure in ensemble 0.624034; ensemble diversity 1.69  
+> chr1:761892, 761932
+caaaaagacaugaaagucaacuugaagagauaauuauuaac
+......(((......)))....................... ( -2.20)
+,,,...(((......)))...,},................. [ -2.82]
+......(((......)))....................... { -2.20 d=2.19}
+ frequency of mfe structure in ensemble 0.365397; ensemble diversity 3.44  
+> chr1:761893, 761933
+aaaaagacaugaaagucaacuugaagagauaauuauuaacc
+.....(((......)))........................ ( -2.20)
+.....(((......)))........................ [ -2.51]
+.....(((......)))........................ { -2.20 d=1.61}
+ frequency of mfe structure in ensemble 0.607483; ensemble diversity 3.03  
+> chr1:761894, 761934
+aaaagacaugaaagucaacuugaagagauaauuauuaaccu
+....(((......)))......................... ( -2.20)
+....(((......)))......................... [ -2.51]
+....(((......)))......................... { -2.20 d=1.66}
+ frequency of mfe structure in ensemble 0.599918; ensemble diversity 3.13  
+> chr1:761895, 761935
+aaagacaugaaagucaacuugaagagauaauuauuaaccua
+...(((......))).......................... ( -2.20)
+...(((......))).......................... [ -2.53]
+...(((......))).......................... { -2.20 d=1.75}
+ frequency of mfe structure in ensemble 0.581408; ensemble diversity 3.31  
+> chr1:761896, 761936
+aagacaugaaagucaacuugaagagauaauuauuaaccuag
+..(((......)))........................... ( -2.20)
+..(((......)))........................... [ -2.54]
+..(((......)))........................... { -2.20 d=1.75}
+ frequency of mfe structure in ensemble 0.576162; ensemble diversity 3.32  
+> chr1:761897, 761937
+agacaugaaagucaacuugaagagauaauuauuaaccuaga
+.(((......)))............................ ( -2.20)
+.(((......)))............................ [ -2.55]
+.(((......)))............................ { -2.20 d=1.75}
+ frequency of mfe structure in ensemble 0.569794; ensemble diversity 3.33  
+> chr1:761898, 761938
+gacaugaaagucaacuugaagagauaauuauuaaccuagau
+(((......)))............................. ( -2.40)
+(((......)))............................. [ -2.74]
+(((......)))............................. { -2.40 d=1.67}
+ frequency of mfe structure in ensemble 0.573859; ensemble diversity 3.18  
+> chr1:761899, 761939
+acaugaaagucaacuugaagagauaauuauuaaccuagaug
+......................................... (  0.00)
+...,,...,{{..........,.,..,,.,........... [ -1.11]
+......................................... {  0.00 d=4.09}
+ frequency of mfe structure in ensemble 0.163951; ensemble diversity 7.09  
+> chr1:761900, 761940
+caugaaagucaacuugaagagauaauuauuaaccuagauga
+......................................... (  0.00)
+.......,{{..........,....,,,|,......,.,,. [ -1.39]
+......................................... {  0.00 d=5.03}
+ frequency of mfe structure in ensemble 0.105087; ensemble diversity 8.77  
+> chr1:761901, 761941
+augaaagucaacuugaagagauaauuauuaaccuagaugag
+........................(((((......))))). ( -0.10)
+.......{{..,,...........,,,||......},}},. [ -1.52]
+......................................... {  0.00 d=5.39}
+ frequency of mfe structure in ensemble 0.100213; ensemble diversity 8.92  
+> chr1:761902, 761942
+ugaaagucaacuugaagagauaauuauuaaccuagaugaga
+.......................(((((......))))).. ( -0.10)
+......{{..,,...........,,,{|......},}}}.. [ -1.52]
+......................................... {  0.00 d=5.32}
+ frequency of mfe structure in ensemble 0.0999348; ensemble diversity 8.85  
+> chr1:761903, 761943
+gaaagucaacuugaagagauaauuauuaaccuagaugagac
+......................(((((......)))))... ( -0.10)
+.....{{..,,...........,,,||......},}}}... [ -1.51]
+......................................... {  0.00 d=5.40}
+ frequency of mfe structure in ensemble 0.10215; ensemble diversity 9.00  
+> chr1:761904, 761944
+aaagucaacuugaagagauaauuauuaaccuagaugagaca
+.....................(((((......))))).... ( -0.10)
+...{((..,,,...,.,....,,,||......},}},,,,. [ -1.81]
+......................................... {  0.00 d=6.33}
+ frequency of mfe structure in ensemble 0.0621782; ensemble diversity 9.86  
+> chr1:761905, 761945
+aagucaacuugaagagauaauuauuaaccuagaugagacaa
+....................(((((......)))))..... ( -0.10)
+..{((..,,,...,.,....,,,||......},}},,,,.. [ -1.80]
+......................................... {  0.00 d=6.34}
+ frequency of mfe structure in ensemble 0.0633279; ensemble diversity 9.84  
+> chr1:761906, 761946
+agucaacuugaagagauaauuauuaaccuagaugagacaau
+...................(((((......)))))...... ( -0.10)
+.{((..,,....,.,....,,,||......},}},},,... [ -1.79]
+......................................... {  0.00 d=6.36}
+ frequency of mfe structure in ensemble 0.0646112; ensemble diversity 9.82  
+> chr1:761907, 761947
+gucaacuugaagagauaauuauuaaccuagaugagacaaug
+(((...............(((((......)))))))).... ( -0.20)
+{((..,,,...,.,.....,,||......},}},}}}.... [ -1.89]
+(((...............................))).... { -0.07 d=6.26}
+ frequency of mfe structure in ensemble 0.0644492; ensemble diversity 9.78  
+> chr1:761908, 761948
+ucaacuugaagagauaauuauuaaccuagaugagacaaugu
+.................(((((......)))))........ ( -0.10)
+,,,.,,...........,,,{|......},})}........ [ -1.35]
+......................................... {  0.00 d=5.09}
+ frequency of mfe structure in ensemble 0.132614; ensemble diversity 8.12  
+> chr1:761909, 761949
+caacuugaagagauaauuauuaaccuagaugagacaaugua
+................(((((......)))))......... ( -0.10)
+................,{{{{......}}}}}......... [ -1.11]
+......................................... {  0.00 d=4.40}
+ frequency of mfe structure in ensemble 0.194712; ensemble diversity 6.45  
+> chr1:761910, 761950
+aacuugaagagauaauuauuaaccuagaugagacaauguaa
+...............(((((......))))).......... ( -0.10)
+...............,{,{{......,}}},.......... [ -1.16]
+......................................... {  0.00 d=4.44}
+ frequency of mfe structure in ensemble 0.178827; ensemble diversity 6.73  
+> chr1:761911, 761951
+acuugaagagauaauuauuaaccuagaugagacaauguaag
+.((((.........(((((......))))).......)))) ( -0.50)
+.,{{,.........{{{{{......}}})}.......},,, [ -1.48]
+..............(((((......)))))........... { -0.10 d=5.06}
+ frequency of mfe structure in ensemble 0.203894; ensemble diversity 7.39  
+> chr1:761912, 761952
+cuugaagagauaauuauuaaccuagaugagacaauguaagc
+((((.........(((((......))))).......)))). ( -0.40)
+,,,,.........{{{{{......}}}}}.......},,,. [ -1.46]
+.............(((((......)))))............ { -0.10 d=5.22}
+ frequency of mfe structure in ensemble 0.179217; ensemble diversity 7.61  
+> chr1:761913, 761953
+uugaagagauaauuauuaaccuagaugagacaauguaagca
+............(((((......)))))............. ( -0.10)
+............{{{{{......,}}},.....,.,..... [ -1.16]
+......................................... {  0.00 d=4.51}
+ frequency of mfe structure in ensemble 0.179328; ensemble diversity 6.40  
+> chr1:761914, 761954
+ugaagagauaauuauuaaccuagaugagacaauguaagcau
+...........(((((......))))).............. ( -0.10)
+...........{{{{{......,}}},.....,.,...... [ -1.18]
+.............((........))................ {  3.90 d=4.55}
+ frequency of mfe structure in ensemble 0.174026; ensemble diversity 6.36  
+> chr1:761915, 761955
+gaagagauaauuauuaaccuagaugagacaauguaagcauc
+.....................((((............)))) ( -0.40)
+..........,,,,.......||||........,...,,,, [ -1.50]
+......................................... {  0.00 d=4.96}
+ frequency of mfe structure in ensemble 0.168928; ensemble diversity 8.08  
+> chr1:761916, 761956
+aagagauaauuauuaaccuagaugagacaauguaagcaucc
+....................((((............)))). ( -1.20)
+.........,,,,.......{{{{.......,,...}))). [ -1.98]
+....................((((............)))). { -1.20 d=5.45}
+ frequency of mfe structure in ensemble 0.28361; ensemble diversity 7.92  
+> chr1:761917, 761957
+agagauaauuauuaaccuagaugagacaauguaagcaucca
+...................((((............)))).. ( -1.20)
+...,,,..,,,,.......{{{{.......,},,.,))).. [ -2.08]
+......................................... {  0.00 d=6.01}
+ frequency of mfe structure in ensemble 0.239638; ensemble diversity 8.56  
+> chr1:761918, 761958
+gagauaauuauuaaccuagaugagacaauguaagcauccaa
+..................((((............))))... ( -1.20)
+..,,,..,,,,.......,{{{.......}},,.,)))... [ -2.12]
+......................................... {  0.00 d=6.16}
+ frequency of mfe structure in ensemble 0.225269; ensemble diversity 8.55  
+> chr1:761919, 761959
+agauaauuauuaaccuagaugagacaauguaagcauccaaa
+.................((((............)))).... ( -1.20)
+.......,,,.......{{{{.......,,...}))).... [ -1.94]
+.................((((............)))).... { -1.20 d=5.06}
+ frequency of mfe structure in ensemble 0.303212; ensemble diversity 7.39  
+> chr1:761920, 761960
+gauaauuauuaaccuagaugagacaauguaagcauccaaaa
+................((((............))))..... ( -1.20)
+................{{{{.......,,...})))..... [ -1.89]
+................((((............))))..... { -1.20 d=4.59}
+ frequency of mfe structure in ensemble 0.328618; ensemble diversity 6.94  
+> chr1:761921, 761961
+auaauuauuaaccuagaugagacaauguaagcauccaaaac
+...............((((............))))...... ( -1.20)
+...............((((............))))...... [ -1.75]
+...............((((............))))...... { -1.20 d=2.88}
+ frequency of mfe structure in ensemble 0.412686; ensemble diversity 4.64  
+> chr1:761922, 761962
+uaauuauuaaccuagaugagacaauguaagcauccaaaaca
+..............((((............))))....... ( -1.20)
+..............((((............))))....... [ -1.75]
+..............((((............))))....... { -1.20 d=2.93}
+ frequency of mfe structure in ensemble 0.409411; ensemble diversity 4.72  
+> chr1:761923, 761963
+aauuauuaaccuagaugagacaauguaagcauccaaaacaa
+.............((((............))))........ ( -1.20)
+.............((((............))))........ [ -1.75]
+.............((((............))))........ { -1.20 d=2.96}
+ frequency of mfe structure in ensemble 0.408592; ensemble diversity 4.75  
+> chr1:761924, 761964
+auuauuaaccuagaugagacaauguaagcauccaaaacaau
+............((((............))))......... ( -1.20)
+............((((............))))......... [ -1.76]
+............((((............))))......... { -1.20 d=2.97}
+ frequency of mfe structure in ensemble 0.403997; ensemble diversity 4.78  
+> chr1:761925, 761965
+uuauuaaccuagaugagacaauguaagcauccaaaacaaua
+...........((((............)))).......... ( -1.20)
+...........((((............)))).......... [ -1.82]
+...........((((............)))).......... { -1.20 d=3.10}
+ frequency of mfe structure in ensemble 0.366898; ensemble diversity 5.14  
+> chr1:761926, 761966
+uauuaaccuagaugagacaauguaagcauccaaaacaauaa
+..........((((............))))........... ( -1.20)
+..........((((............))))........... [ -1.83]
+..........((((............))))........... { -1.20 d=2.59}
+ frequency of mfe structure in ensemble 0.360712; ensemble diversity 4.34  
+> chr1:761927, 761967
+auuaaccuagaugagacaauguaagcauccaaaacaauaaa
+.........((((............))))............ ( -1.20)
+.........((((............))))............ [ -1.68]
+.........((((............))))............ { -1.20 d=2.00}
+ frequency of mfe structure in ensemble 0.459842; ensemble diversity 3.38  
+> chr1:761928, 761968
+uuaaccuagaugagacaauguaagcauccaaaacaauaaag
+........((((............))))............. ( -1.20)
+........((((............))))............. [ -1.66]
+........((((............))))............. { -1.20 d=1.95}
+ frequency of mfe structure in ensemble 0.471061; ensemble diversity 3.27  
+> chr1:761929, 761969
+uaaccuagaugagacaauguaagcauccaaaacaauaaaga
+.......((((............)))).............. ( -1.20)
+.......((((............)))).............. [ -1.67]
+.......((((............)))).............. { -1.20 d=1.96}
+ frequency of mfe structure in ensemble 0.470146; ensemble diversity 3.29  
+> chr1:761930, 761970
+aaccuagaugagacaauguaagcauccaaaacaauaaagac
+......((((............))))............... ( -1.20)
+......((((............))))............... [ -1.66]
+......((((............))))............... { -1.20 d=1.95}
+ frequency of mfe structure in ensemble 0.471619; ensemble diversity 3.28  
+> chr1:761931, 761971
+accuagaugagacaauguaagcauccaaaacaauaaagacu
+.....((((............))))................ ( -1.20)
+.....((((............))))................ [ -1.66]
+.....((((............))))................ { -1.20 d=1.96}
+ frequency of mfe structure in ensemble 0.470743; ensemble diversity 3.29  
+> chr1:761932, 761972
+ccuagaugagacaauguaagcauccaaaacaauaaagacug
+....((((............))))................. ( -1.20)
+....((((............))))................. [ -1.67]
+....((((............))))................. { -1.20 d=1.94}
+ frequency of mfe structure in ensemble 0.463054; ensemble diversity 3.29  
+> chr1:761933, 761973
+cuagaugagacaauguaagcauccaaaacaauaaagacugc
+...((((............)))).................. ( -1.20)
+...((((............)))).................. [ -1.76]
+...((((............)))).................. { -1.20 d=2.87}
+ frequency of mfe structure in ensemble 0.4002; ensemble diversity 4.70  
+> chr1:761934, 761974
+uagaugagacaauguaagcauccaaaacaauaaagacugca
+..((((............))))................... ( -1.20)
+..,{{,........,..,||||............,..}}}. [ -2.11]
+......................................... {  0.00 d=5.01}
+ frequency of mfe structure in ensemble 0.229333; ensemble diversity 6.76  
+> chr1:761935, 761975
+agaugagacaauguaagcauccaaaacaauaaagacugcaa
+.((((............)))).................... ( -1.20)
+.,,,,...........,||||............,..,},.. [ -2.01]
+......................................... {  0.00 d=4.46}
+ frequency of mfe structure in ensemble 0.26944; ensemble diversity 6.06  
+> chr1:761936, 761976
+gaugagacaauguaagcauccaaaacaauaaagacugcaau
+((((............))))..................... ( -1.00)
+,,,,...........,||||............,..}}}... [ -1.92]
+......................................... {  0.00 d=4.38}
+ frequency of mfe structure in ensemble 0.224886; ensemble diversity 6.09  
+> chr1:761937, 761977
+augagacaauguaagcauccaaaacaauaaagacugcaaug
+..............(((((............)).))).... ( -1.00)
+..........,,..{({,,............),.))).... [ -1.75]
+..............(((.................))).... { -0.20 d=4.34}
+ frequency of mfe structure in ensemble 0.297289; ensemble diversity 6.03  
+> chr1:761938, 761978
+ugagacaauguaagcauccaaaacaauaaagacugcaaugg
+.....((.((((..(...............)..)))).)). ( -1.40)
+.....{{.{{{{.,(...............)..)))}.}}. [ -2.18]
+.....((.((((.....................)))).)). { -0.60 d=4.96}
+ frequency of mfe structure in ensemble 0.282414; ensemble diversity 6.60  
+> chr1:761939, 761979
+gagacaauguaagcauccaaaacaauaaagacugcaauggc
+....((.((((..(...............)..)))).)).. ( -1.40)
+....{{.{{{,.,(...............}..)))}.}}.. [ -2.23]
+....((.(((.......................))).)).. {  0.70 d=5.19}
+ frequency of mfe structure in ensemble 0.259797; ensemble diversity 6.93  
+> chr1:761940, 761980
+agacaauguaagcauccaaaacaauaaagacugcaauggcc
+...((.((((..(...............)..)))).))... ( -1.40)
+...{{.{{{,.,(...............}..)))}.}}... [ -2.30]
+...((.(((.......................))).))... {  0.70 d=5.26}
+ frequency of mfe structure in ensemble 0.230344; ensemble diversity 7.12  
+> chr1:761941, 761981
+gacaauguaagcauccaaaacaauaaagacugcaauggccu
+..((.((((..(...............)..)))).)).... ( -1.40)
+..{{.{{{,.,{...............}..)))}.}}.... [ -2.32]
+..((.(((.......................))).)).... {  0.70 d=5.36}
+ frequency of mfe structure in ensemble 0.223164; ensemble diversity 7.29  
+> chr1:761942, 761982
+acaauguaagcauccaaaacaauaaagacugcaauggccug
+.((.((((..(...............)..)))).))..... ( -1.40)
+.,,.{{{,.,{...............}..))),.}}..... [ -2.30]
+.....(.........................)......... {  4.90 d=5.70}
+ frequency of mfe structure in ensemble 0.232385; ensemble diversity 7.77  
+> chr1:761943, 761983
+caauguaagcauccaaaacaauaaagacugcaauggccuga
+((.((((..(...............)..)))).))...... ( -1.10)
+,,.,,,..,{,.,............}..))),.}}...... [ -2.22]
+......................................... {  0.00 d=5.49}
+ frequency of mfe structure in ensemble 0.161689; ensemble diversity 8.35  
+> chr1:761944, 761984
+aauguaagcauccaaaacaauaaagacugcaauggccugaa
+.......(((((............)).)))........... ( -1.00)
+.......{{{.{,...........,..))}....,...... [ -1.97]
+......................................... {  0.00 d=4.69}
+ frequency of mfe structure in ensemble 0.207364; ensemble diversity 7.12  
+> chr1:761945, 761985
+auguaagcauccaaaacaauaaagacugcaauggccugaaa
+......(((((............)).)))............ ( -1.00)
+......{{{.{,...........,..))}....,....... [ -1.95]
+......................................... {  0.00 d=4.66}
+ frequency of mfe structure in ensemble 0.212515; ensemble diversity 7.00  
+> chr1:761946, 761986
+uguaagcauccaaaacaauaaagacugcaauggccugaaau
+.....(((((............)).)))............. ( -1.00)
+.....{{{.{,...........,..))}....,........ [ -1.95]
+......................................... {  0.00 d=4.65}
+ frequency of mfe structure in ensemble 0.214631; ensemble diversity 6.95  
+> chr1:761947, 761987
+guaagcauccaaaacaauaaagacugcaauggccugaaaua
+....(((((............)).))).............. ( -1.00)
+....{{{.{,...........,..))}...,,......... [ -1.89]
+......................................... {  0.00 d=4.60}
+ frequency of mfe structure in ensemble 0.2341; ensemble diversity 6.51  
+> chr1:761948, 761988
+uaagcauccaaaacaauaaagacugcaauggccugaaauac
+...(((((............)).)))............... ( -1.00)
+...{{{.{,...........,..))}..,,,.......... [ -1.83]
+......................................... {  0.00 d=4.50}
+ frequency of mfe structure in ensemble 0.258955; ensemble diversity 6.23  
+> chr1:761949, 761989
+aagcauccaaaacaauaaagacugcaauggccugaaauaca
+..(((((............)).)))................ ( -1.00)
+..{{{.{,...........,..))}..,,,........... [ -1.85]
+......................................... {  0.00 d=4.51}
+ frequency of mfe structure in ensemble 0.253029; ensemble diversity 6.22  
+> chr1:761950, 761990
+agcauccaaaacaauaaagacugcaauggccugaaauacau
+.(((((............)).)))................. ( -1.00)
+.{{{,{,...........,,.))}..,,,............ [ -1.89]
+.(((.................)))................. { -0.20 d=4.38}
+ frequency of mfe structure in ensemble 0.234783; ensemble diversity 6.33  
+> chr1:761951, 761991
+gcauccaaaacaauaaagacugcaauggccugaaauacauc
+(((((............)).))).................. ( -1.20)
+(((,{............},.)))..,,.............. [ -2.05]
+(((.................))).................. { -0.40 d=3.85}
+ frequency of mfe structure in ensemble 0.251098; ensemble diversity 5.79  
+> chr1:761952, 761992
+cauccaaaacaauaaagacugcaauggccugaaauacauca
+...(((...((........))...))).............. ( -0.30)
+...,,,...,,........,}...}})..,,.......... [ -1.40]
+......................................... {  0.00 d=4.00}
+ frequency of mfe structure in ensemble 0.166962; ensemble diversity 5.64  
+> chr1:761953, 761993
+auccaaaacaauaaagacugcaauggccugaaauacaucaa
+..(((...((........))...)))............... ( -0.30)
+..,,,...,,........,|...,}}..,,,......,,,. [ -1.52]
+......................................... {  0.00 d=4.18}
+ frequency of mfe structure in ensemble 0.139201; ensemble diversity 5.67  
+> chr1:761954, 761994
+uccaaaacaauaaagacugcaauggccugaaauacaucaaa
+.(((...((........))...)))................ ( -0.30)
+.,,,...,,........,|...,}}..,,,......,,,.. [ -1.51]
+......................................... {  0.00 d=4.18}
+ frequency of mfe structure in ensemble 0.13929; ensemble diversity 5.67  
+> chr1:761955, 761995
+ccaaaacaauaaagacugcaauggccugaaauacaucaaau
+(((...((........))...)))................. ( -0.20)
+,,,...,,........,|...,}}..,,,......,,,... [ -1.47]
+......................................... {  0.00 d=4.05}
+ frequency of mfe structure in ensemble 0.126434; ensemble diversity 5.65  
+> chr1:761956, 761996
+caaaacaauaaagacugcaauggccugaaauacaucaaaug
+......................................... (  0.00)
+................,,....,,.,,,......,,,.... [ -1.21]
+......................................... {  0.00 d=2.91}
+ frequency of mfe structure in ensemble 0.140926; ensemble diversity 4.40  
+> chr1:761957, 761997
+aaaacaauaaagacugcaauggccugaaauacaucaaaugc
+...............((((((..........)))....))) ( -0.10)
+...............{{...,,,.,,.......},,...,, [ -1.49]
+......................................... {  0.00 d=3.91}
+ frequency of mfe structure in ensemble 0.104938; ensemble diversity 6.22  
+> chr1:761958, 761998
+aaacaauaaagacugcaauggccugaaauacaucaaaugca
+.............(((((((..........)))....)))) ( -1.80)
+.............,(((,({...,,.....}}),,..))), [ -2.80]
+..............(((....................))). { -0.10 d=4.31}
+ frequency of mfe structure in ensemble 0.198443; ensemble diversity 6.41  
