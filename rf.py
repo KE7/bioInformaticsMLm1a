@@ -9,13 +9,16 @@ import random
 def ReadFASTA(filename):
     fp = open(filename, 'r')
     Sequences = []
+    labels = []
     tmpname = ""
     tmpseq = ""
     for line in fp:
         if line[0] != ">" and line[0] != "n":
             Sequences.append(line)
+        if line[0] == ">":
+            labels.append(line)
     fp.close()
-    return Sequences
+    return (labels, Sequences)
 
 # Read the RT file
 def ReadCov(filename):
@@ -45,10 +48,10 @@ def GetGCSeq(seq):
     return [float(1.0 * n / len(seq)) for n in nGC]
 
 def GetModel():
-    seq_pos_train = ReadFASTA('data/positive_776_train.fasta')
-    seq_neg_train = ReadFASTA('data/negative_776_train.fasta')
-    seq_pos_test = ReadFASTA('data/positive_776_test.fasta')
-    seq_neg_test = ReadFASTA('data/negative_776_test.fasta')
+    (label_pos_train, seq_pos_train) = ReadFASTA('data/positive_776_train.fasta')
+    (label_neg_train, seq_neg_train) = ReadFASTA('data/negative_776_train.fasta')
+    (label_pos_test, seq_pos_test) = ReadFASTA('data/positive_776_test.fasta')
+    (label_neg_test, seq_neg_test) = ReadFASTA('data/negative_776_test.fasta')
 
     cov_pos_train = ReadCov('data/cov_pos_776_train.fasta')
     cov_neg_train = ReadCov('data/cov_neg_776_train.fasta')
@@ -80,7 +83,7 @@ def GetModel():
         dtype = np.float)
     data_test = np.array(list(gc_pos_test) + list(gc_neg_test),\
         dtype = np.float)
-    print "G/C content feature matrix sample:"
+    print "Feature matrix sample:"
     print data_train[0]
     print ""
     pos_len_train = len(gc_pos_train)
@@ -107,7 +110,9 @@ def GetModel():
     print "Predict Label:"
     print result
 
-    return model
+    label = np.array(list(label_pos_test) + list(label_neg_test))
+
+    return (model, label, result)
 
 # Training and testing phase
 if __name__ == "__main__":
@@ -131,5 +136,10 @@ if __name__ == "__main__":
     ReadFASTA_neg('data/negative_776.txt')
     split_pos()
     split_neg()
-    model = GetModel()
+    (model, label, result) = GetModel()
+    ofn = "result/result.csv"
+    ouF = open(ofn, 'w')
+    for i in range(0, len(result)):
+        ouF.write(str(label[i]) + str(result[i]) + '\n')
+    ouF.close()
     
