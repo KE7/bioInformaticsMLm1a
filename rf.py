@@ -137,7 +137,7 @@ if __name__ == "__main__":
     split_pos()
     split_neg()
     (model, label, result) = GetModel()
-    ofn = "result/result.txt"
+    ofn = "result/result.csv"
     ouF = open(ofn, 'w')
     for i in range(0, len(result)):
         ouF.write(str(label[i]) + str(result[i]) + '\n')
