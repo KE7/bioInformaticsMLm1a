@@ -50,18 +50,12 @@ def GetGCSeq(seq):
 def GetModel():
     (label_pos_train, seq_pos_train) = ReadFASTA('data/positive_776_train.fasta')
     (label_neg_train, seq_neg_train) = ReadFASTA('data/negative_776_train.fasta')
-    (label_pos_test, seq_pos_test) = ReadFASTA('data/positive_776_test.fasta')
-    (label_neg_test, seq_neg_test) = ReadFASTA('data/negative_776_test.fasta')
 
     cov_pos_train = ReadCov('data/cov_pos_776_train.fasta')
-    cov_neg_train = ReadCov('data/cov_neg_776_train.fasta')
-    cov_pos_test = ReadCov('data/cov_pos_776_test.fasta')
-    cov_neg_test = ReadCov('data/cov_neg_776_test.fasta')    
+    cov_neg_train = ReadCov('data/cov_neg_776_train.fasta')    
     
     gc_pos_train = GetGC(seq_pos_train)
     gc_neg_train = GetGC(seq_neg_train)
-    gc_pos_test = GetGC(seq_pos_test)
-    gc_neg_test = GetGC(seq_neg_test)
 
     for i in range(0, len(seq_pos_train)):
         for j in cov_pos_train[i]:
@@ -69,6 +63,38 @@ def GetModel():
     for i in range(0, len(seq_neg_train)):
         for j in cov_neg_train[i]:
             gc_neg_train[i].append(float(j))
+
+    model = RandomForestClassifier(criterion="entropy", n_estimators = 300,\
+        max_depth = 100, class_weight={0:100, 1:1})
+
+    data_train = np.array(list(gc_pos_train) + list(gc_neg_train),\
+        dtype = np.float)
+
+    print "Feature matrix sample:"
+    print data_train[0]
+    print ""
+    pos_len_train = len(gc_pos_train)
+    neg_len_train = len(gc_neg_train)
+
+    label_train = np.array([1 for x in xrange(pos_len_train)] +\
+        [0 for x in xrange(neg_len_train)])
+
+    
+    model = model.fit(data_train, label_train)
+    
+
+    return model
+
+def validate(model):
+    (label_pos_test, seq_pos_test) = ReadFASTA('data/positive_776_test.fasta')
+    (label_neg_test, seq_neg_test) = ReadFASTA('data/negative_776_test.fasta')
+
+    cov_pos_test = ReadCov('data/cov_pos_776_test.fasta')
+    cov_neg_test = ReadCov('data/cov_neg_776_test.fasta')
+
+    gc_pos_test = GetGC(seq_pos_test)
+    gc_neg_test = GetGC(seq_neg_test)
+
     for i in range(0, len(seq_pos_test)):
         for j in cov_pos_test[i]:
             gc_pos_test[i].append(float(j))
@@ -76,26 +102,14 @@ def GetModel():
         for j in cov_neg_test[i]:
             gc_neg_test[i].append(float(j))
 
-    model = RandomForestClassifier(criterion="entropy", n_estimators = 300,\
-        max_depth = 100, class_weight={0:100, 1:1})
-
-    data_train = np.array(list(gc_pos_train) + list(gc_neg_train),\
-        dtype = np.float)
     data_test = np.array(list(gc_pos_test) + list(gc_neg_test),\
         dtype = np.float)
-    print "Feature matrix sample:"
-    print data_train[0]
-    print ""
-    pos_len_train = len(gc_pos_train)
-    neg_len_train = len(gc_neg_train)
     pos_len_test = len(gc_pos_test)
     neg_len_test = len(gc_neg_test)
-    label_train = np.array([1 for x in xrange(pos_len_train)] +\
-        [0 for x in xrange(neg_len_train)])
+
     label_test = np.array([1 for x in xrange(pos_len_test)] +\
         [0 for x in xrange(neg_len_test)])
-    
-    model = model.fit(data_train, label_train)
+
     result = model.predict(data_test)
 
     err = 0.0
@@ -112,7 +126,27 @@ def GetModel():
 
     label = np.array(list(label_pos_test) + list(label_neg_test))
 
-    return (model, label, result)
+    return (label, result)
+
+def predict(model, seq_file, cov_file):
+    (label_test, seq_test) = ReadFASTA(seq_file)
+
+    cov_test = ReadCov(cov_file)
+
+    gc_test = GetGC(seq_test)
+
+    for i in range(0, len(seq_test)):
+        for j in cov_test[i]:
+            gc_test[i].append(float(j))
+
+    data_test = np.array(list(gc_test), dtype = np.float)
+    len_test = len(gc_test)
+
+    result = model.predict(data_test)
+
+    label = np.array(list(label_test))
+
+    return (label, result)
 
 # Training and testing phase
 if __name__ == "__main__":
@@ -132,11 +166,17 @@ if __name__ == "__main__":
         ouF.write(normalize(line))
     inF.close()
     ouF.close()
+    if sys.argv[1] == "+":
+        seq_file = sys.argv[2]
+        cov_file = sys.argv[3]
     ReadFASTA_pos('data/positive_776.txt')
     ReadFASTA_neg('data/negative_776.txt')
     split_pos()
     split_neg()
-    (model, label, result) = GetModel()
+    model = GetModel()
+    (label, result) = validate(model)
+    if sys.argv[1] == "+":
+        (label, result) = predict(model, seq_file, cov_file)
     ofn = "result/result.csv"
     ouF = open(ofn, 'w')
     for i in range(0, len(result)):
