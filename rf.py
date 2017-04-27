@@ -166,16 +166,16 @@ if __name__ == "__main__":
         ouF.write(normalize(line))
     inF.close()
     ouF.close()
-    if sys.argv[1] == "+":
-        seq_file = sys.argv[2]
-        cov_file = sys.argv[3]
+    if len(sys.argv) > 1:
+        seq_file = sys.argv[1]
+        cov_file = sys.argv[2]
     ReadFASTA_pos('data/positive_776.txt')
     ReadFASTA_neg('data/negative_776.txt')
     split_pos()
     split_neg()
     model = GetModel()
     (label, result) = validate(model)
-    if sys.argv[1] == "+":
+    if len(sys.argv) > 1:
         (label, result) = predict(model, seq_file, cov_file)
     ofn = "result/result.csv"
     ouF = open(ofn, 'w')
