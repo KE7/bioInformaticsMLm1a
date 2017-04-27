@@ -8,7 +8,7 @@ def ReadFASTA_pos(filename):
     cnt = 0
     for line in fp:
         if line[0] == ">":
-            pre = line[0] + str(cnt) + "\n"
+            pre = line
         else:
             if cnt < 2000:
                 wp1.write(pre)
@@ -29,7 +29,7 @@ def ReadFASTA_neg(filename):
     cnt = 0
     for line in fp:
         if line[0] == ">":
-            pre = line[0] + str(cnt) + "\n"
+            pre = line
         else:
             if cnt < 6000:
                 wp1.write(pre)
