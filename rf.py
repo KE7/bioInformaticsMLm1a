@@ -33,6 +33,21 @@ def ReadCov(filename):
     fp.close()
     return Sequences
 
+def ReadFolds(filename):
+    fp = open(filename, 'r')
+    folds = []
+    for line in fp:
+        if line[0] != ">":
+            strs = line.split()
+            strs[0] = strs[0][0:-1]
+            tmp = []
+            for s in strs:
+                tmp.append(float(s))
+            folds.append(tmp)
+    fp.close()
+    return folds
+
+
 # Get G/C content feature
 def GetGC(seq):
     gc = []
@@ -50,6 +65,8 @@ def GetGCSeq(seq):
 def GetModel():
     (label_pos_train, seq_pos_train) = ReadFASTA('data/positive_776_train.fasta')
     (label_neg_train, seq_neg_train) = ReadFASTA('data/negative_776_train.fasta')
+    folds_pos_train = ReadFolds('data/positive_folds_train.fasta')
+    folds_neg_train = ReadFolds('data/negative_folds_train.fasta')
 
     cov_pos_train = ReadCov('data/cov_pos_776_train.fasta')
     cov_neg_train = ReadCov('data/cov_neg_776_train.fasta')    
@@ -60,8 +77,12 @@ def GetModel():
     for i in range(0, len(seq_pos_train)):
         for j in cov_pos_train[i]:
             gc_pos_train[i].append(float(j))
+        for j in folds_pos_train[i]:
+            gc_pos_train[i].append(float(j))
     for i in range(0, len(seq_neg_train)):
         for j in cov_neg_train[i]:
+            gc_neg_train[i].append(float(j))
+        for j in folds_neg_train[i]:
             gc_neg_train[i].append(float(j))
 
     model = RandomForestClassifier(criterion="entropy", n_estimators = 300,\
@@ -88,6 +109,8 @@ def GetModel():
 def validate(model):
     (label_pos_test, seq_pos_test) = ReadFASTA('data/positive_776_test.fasta')
     (label_neg_test, seq_neg_test) = ReadFASTA('data/negative_776_test.fasta')
+    folds_pos_test = ReadFolds('data/positive_folds_test.fasta')
+    folds_neg_test = ReadFolds('data/negative_folds_test.fasta')
 
     cov_pos_test = ReadCov('data/cov_pos_776_test.fasta')
     cov_neg_test = ReadCov('data/cov_neg_776_test.fasta')
@@ -98,8 +121,12 @@ def validate(model):
     for i in range(0, len(seq_pos_test)):
         for j in cov_pos_test[i]:
             gc_pos_test[i].append(float(j))
+        for j in folds_pos_test[i]:
+            gc_pos_test[i].append(float(j))
     for i in range(0, len(seq_neg_test)):
         for j in cov_neg_test[i]:
+            gc_neg_test[i].append(float(j))
+        for j in folds_neg_test[i]:
             gc_neg_test[i].append(float(j))
 
     data_test = np.array(list(gc_pos_test) + list(gc_neg_test),\
@@ -171,15 +198,31 @@ if __name__ == "__main__":
         cov_file = sys.argv[2]
     ReadFASTA_pos('data/positive_776.txt')
     ReadFASTA_neg('data/negative_776.txt')
+    ReadFASTA_folds_pos('data/Positive_Samples/all_pos_folds_parsed.txt')
+    ReadFASTA_folds_neg('data/Negative_Samples/all_neg_folds_parsed.txt')
     split_pos()
     split_neg()
     model = GetModel()
     (label, result) = validate(model)
     if len(sys.argv) > 1:
         (label, result) = predict(model, seq_file, cov_file)
-    ofn = "result/result.csv"
-    ouF = open(ofn, 'w')
-    for i in range(0, len(result)):
-        ouF.write(str(label[i]) + str(result[i]) + '\n')
-    ouF.close()
+        ofn = "result/result.csv"
+        ouF = open(ofn, 'w')
+        for i in range(0, len(result)):
+            ouF.write(str(label[i]))
+            if result[i] == 0:
+                ouF.write('false' + '\n')
+            else:
+                ouF.write('true' + '\n')
+        ouF.close()
+    else:
+        ofn = "result/result.csv"
+        ouF = open(ofn, 'w')
+        for i in range(0, len(result)):
+            ouF.write(str(label[i]))
+            if result[i] == 0:
+                ouF.write('false' + '\n')
+            else:
+                ouF.write('true' + '\n')
+        ouF.close()
     
