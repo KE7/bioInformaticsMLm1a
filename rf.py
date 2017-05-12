@@ -155,15 +155,19 @@ def validate(model):
 
     return (label, result)
 
-def predict(model, seq_file, cov_file):
+def predict(model, seq_file, cov_file, folds_file):
     (label_test, seq_test) = ReadFASTA(seq_file)
 
     cov_test = ReadCov(cov_file)
+
+    folds_test = ReadFolds(folds_file)
 
     gc_test = GetGC(seq_test)
 
     for i in range(0, len(seq_test)):
         for j in cov_test[i]:
+            gc_test[i].append(float(j))
+        for j in folds_test[i]:
             gc_test[i].append(float(j))
 
     data_test = np.array(list(gc_test), dtype = np.float)
@@ -196,6 +200,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         seq_file = sys.argv[1]
         cov_file = sys.argv[2]
+        folds_file = sys.argv[3]
     ReadFASTA_pos('data/positive_776.txt')
     ReadFASTA_neg('data/negative_776.txt')
     ReadFASTA_folds_pos('data/Positive_Samples/all_pos_folds_parsed.txt')
@@ -205,7 +210,7 @@ if __name__ == "__main__":
     model = GetModel()
     (label, result) = validate(model)
     if len(sys.argv) > 1:
-        (label, result) = predict(model, seq_file, cov_file)
+        (label, result) = predict(model, seq_file, cov_file, folds_file)
         ofn = "result/result.csv"
         ouF = open(ofn, 'w')
         for i in range(0, len(result)):
